@@ -37,6 +37,7 @@ module.exports = {
       confirmations: 2,
       timeoutBlocks: 200,
       skipDryRun: true,
+      from: "0x141BcA286DA3662595a463cb631bdEFF331d23C8",
       chainId: 137
     },
     //polygon Infura testnet
@@ -64,7 +65,7 @@ module.exports = {
   // Configure your compilers
   compilers: {
     solc: {
-      version: "^0.8.0",
+      version: "^0.8.3",
     }
   },
   db: {

@@ -32,9 +32,12 @@
   "devDependencies": {
     "@maticnetwork/maticjs": "^2.0.40",
     "@truffle/hdwallet-provider": "^1.4.2",
-    "dotenv": "^9.0.0"
+    "dotenv": "^9.0.0",
+    "truffle-plugin-verify": "^0.5.23"
   },
   "dependencies": {
-    "@openzeppelin/contracts-upgradeable": "^4.5.2"
+    "@openzeppelin/contracts": "^4.5.0",
+    "@openzeppelin/contracts-upgradeable": "^4.5.2",
+    "chai": "^4.3.6"
   }
 }
