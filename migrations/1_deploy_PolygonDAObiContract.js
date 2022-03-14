@@ -1,5 +1,7 @@
+const { deployProxy } = require('@openzeppelin/truffle-upgrades');
+
 const DAObiContract = artifacts.require("DAObiContract");
 
-module.exports = function (deployer) {
-  deployer.deployProxy(DAObiContract, { kind: 'uups' });
+module.exports = async function (deployer) {
+  await deployProxy(DAObiContract, { deployer, initializer: '__ERC20_init' });
 };
