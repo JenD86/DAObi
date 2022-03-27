@@ -63,10 +63,10 @@ api_keys: {
     // },
     // Useful for deploying to a public network.
     // NB: It's important to wrap the provider as a function.
-rinkeby: {
+polygon_infura_testnet: {
     provider: () => 
-      new HDWalletProvider(process.env.MNEMONIC, `https://rinkeby.infura.io/v3/${process.env.INFURA_API_KEY}`),
-     network_id: 4,       // Rinkeby's id
+      new HDWalletProvider(process.env.MNEMONIC, `https://polygon-mumbai.infura.io/v3/${process.env.INFURA_API_KEY}`),
+     network_id: 80001,       // Rinkeby's id
    gas: 5000000,        // Ropsten has a lower block limit than mainnet
    confirmations: 2,    // # of confs to wait between deployments. (default: 0)
    timeoutBlocks: 200,  // # of blocks before a deployment times out  (minimum/default: 50)
